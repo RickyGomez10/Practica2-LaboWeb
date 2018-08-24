@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Curriculum vitae</title>
+</head>
+<body>
+    <form action="#" method="get">
+    <section>
+        <article>
+    <h1 style="text-align: center">Curriculum Vitae</h1>
+    <fieldset>
+        <legend>Personal Data</legend>
+        <label for="DUI">DUI</label>
+        <input type="text" name="DUI" id="DUI" placeholder="234970234-9" pattern="\d{8,8}-\d{1,1}" title="El formato debe ser #######-#" required>
+        <label for="First Name">First Name</label>
+        <input type="text" name="First Name" id="First Name" required placeholder="First Name" pattern="[a-zA-Z]+"title="Tiene que ingresar solo letras">
+        <label for="Last Name">Last Name</label>
+        <input type="text" name="Last Name" id="Last Name" placeholder="Last Name" pattern="[a-zA-Z]+" title="Tiene que ingresar solo letras" required >
+        <label for="M">M</label>
+        <input type="radio" name="Gender" id="M" checked>
+        <label for="F">F</label>
+        <input type="radio" name="Gender" id="F">
+        <label for="Contact Number">Contact Number</label>
+        
+        <input type="tel" name="Contact Number" id="Contact Number" pattern="\d{4,4}-\d{4,4}" title="Siga el formato ####-####" placeholder="7777-7777" required>
+        <label for="Birthdate">Birthdate</label>
+        <input type="date" name="Birthdate" id="Birthdate" max="2018-12-31" min="2000-01-01" required>
+        <label for="Civil Status">Civil Status</label>
+        <select name="Civil Status" id="Civil Status" required>
+            <option>Single</option> 
+            <option>Married</option>
+            <option>widow</option>
+
+        </select>
+        <label for="Image">Image</label>
+        <input type="file" name="Image" id="Image" required>
+        
+    </fieldset>
+    <br>
+    <fieldset>
+        <legend>Work Experience</legend>
+        <textarea name="Experience" id="" cols="100" rows="10" placeholder="Experience" style="width: 100%" required></textarea>
+    </fieldset>
+    <br>
+    <fieldset>
+        <legend>Academic Training</legend>
+       
+        <textarea name="Academic Training" id="Academic Training" cols="30" rows="10" style="width: 100%" placeholder="Academic Training" required></textarea>
+    </fieldset>
+    <br>
+    <Fieldset>
+        <fieldset>
+            <legend>Programming Language</legend>
+            <label for="Java">Java</label>
+            <input type="checkbox" name="L" id="Java" >
+            <label for="C#">C#</label>
+            <input type="checkbox" name="L" id="C#">
+            <label for="Python">Python</label>
+            <input type="checkbox" name="L" id="Phyton">
+            <label for="C++">C++</label>
+            <input type="checkbox" name="L" id="C++">
+            <label for="Ruby">Ruby</label>
+            <input type="checkbox" name="L" id="Ruby">
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend>Web Technologies</legend>
+            <label for="HTML5">HTML5</label>
+            <input type="checkbox" name="W" id="HTML5">
+            <label for="CSS">CSS/CSS3</label>
+            <input type="checkbox" name="W" id="CSS">
+            <label for="Materilaze">materialize Css</label>
+            <input type="checkbox" name="W" id="Materilaze">
+            <label for="JS">JavaScript</label>
+            <input type="checkbox" name="W" id="JS">
+            <label for="NODEJS">Node.js</label>
+            <input type="checkbox" name="W" id="NODEJS">
+            <label for="MVC">Spring MVC</label>
+            <input type="checkbox" name="W" id="MVC">
+        </fieldset>
+    </Fieldset>
+    <br>
+    <input type="submit" value="Send">
+    <input type="reset" value="Cancel">
+        </article>
+    </section>
+</form>
+</body>
+</html>
